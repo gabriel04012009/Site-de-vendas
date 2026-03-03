@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MotoGear Store - Equipamentos e roupas premium para motociclistas. Jaquetas, capacetes, luvas, calças e botas com proteção CE.">
+  <title>MotoGear Store | Equipamentos para Motociclistas</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏍️</text></svg>">
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER / NAVBAR
+       ============================================================ -->
+  <header id="header">
+    <nav class="navbar">
+      <a href="#inicio" class="logo">
+        <span class="logo-icon">🏍️</span>
+        <div class="logo-text">
+          <span class="brand">MotoGear</span>
+          <span class="tagline">Ride with Style</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#categorias">Categorias</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#ofertas">Ofertas</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="search-bar">
+          <input type="text" id="searchInput" placeholder="Buscar produtos...">
+          <button id="searchBtn" title="Buscar">🔍</button>
+        </div>
+        <button class="cart-btn" id="cartBtn" title="Carrinho">
+          🛒 Carrinho
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#inicio">Início</a>
+      <a href="#categorias">Categorias</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#ofertas">Ofertas</a>
+      <a href="#contato">Contato</a>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       HERO SECTION
+       ============================================================ -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="hero-pattern"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="badge">🔥 Nova Coleção 2026</span>
+        <h1>
+          Equipe-se para
+          <span class="highlight">Dominar</span>
+          a Estrada
+        </h1>
+        <p>
+          Roupas e equipamentos premium para motociclistas que levam a segurança e o estilo a sério.
+          Proteção CE certificada, materiais de alta performance e design que impressiona.
+        </p>
+        <div class="hero-buttons">
+          <a href="#produtos" class="btn-primary">Ver Coleção</a>
+          <a href="#ofertas" class="btn-outline">Ver Ofertas</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="number">+5.000</span>
+            <span class="label">Clientes</span>
+          </div>
+          <div class="stat">
+            <span class="number">+200</span>
+            <span class="label">Produtos</span>
+          </div>
+          <div class="stat">
+            <span class="number">4.9★</span>
+            <span class="label">Avaliação</span>
+          </div>
+          <div class="stat">
+            <span class="number">10 Anos</span>
+            <span class="label">No Mercado</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="hero-image-wrapper">
+          <img src="images/jaqueta3.jpg" alt="Jaqueta Motoqueiro Premium">
+          <div class="hero-badge-float top-left">
+            <div class="badge-title">Proteção</div>
+            <div class="badge-value">CE Nível 2</div>
+          </div>
+          <div class="hero-badge-float bottom-right">
+            <div class="badge-title">Frete Grátis</div>
+            <div class="badge-value">Acima de R$299</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FEATURES BAR
+       ============================================================ -->
+  <section class="features" id="diferenciais">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card">
+          <span class="feature-icon">🛡️</span>
+          <h3>Proteção Certificada</h3>
+          <p>Todos os produtos com certificação CE e homologação nacional para máxima segurança.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🚚</span>
+          <h3>Entrega Rápida</h3>
+          <p>Frete grátis para todo o Brasil em compras acima de R$299. Entrega expressa disponível.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🔄</span>
+          <h3>Troca Fácil</h3>
+          <p>30 dias para troca ou devolução sem burocracia. Sua satisfação é nossa prioridade.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">💳</span>
+          <h3>Parcelamento</h3>
+          <p>Parcele em até 12x sem juros no cartão de crédito. Também aceitamos Pix e boleto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CATEGORIES SECTION
+       ============================================================ -->
+  <section class="categories" id="categorias">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Explore</span>
+        <h2>Categorias</h2>
+        <p>Encontre tudo que você precisa para sua próxima aventura sobre duas rodas.</p>
+      </div>
+      <div class="categories-grid">
+        <div class="category-card" data-filter="jaquetas">
+          <div class="category-overlay"></div>
+          <img src="images/jaqueta2.webp" alt="Jaquetas">
+          <div class="category-info">
+            <h3>Jaquetas</h3>
+            <span>4 produtos</span>
+          </div>
+        </div>
+        <div class="category-card" data-filter="capacetes">
+          <div class="category-overlay"></div>
+          <img src="images/capacete2.jpg" alt="Capacetes">
+          <div class="category-info">
+            <h3>Capacetes</h3>
+            <span>2 produtos</span>
+          </div>
+        </div>
+        <div class="category-card" data-filter="luvas">
+          <div class="category-overlay"></div>
+          <img src="images/luva1.jpg" alt="Luvas">
+          <div class="category-info">
+            <h3>Luvas</h3>
+            <span>2 produtos</span>
+          </div>
+        </div>
+        <div class="category-card" data-filter="calcas">
+          <div class="category-overlay"></div>
+          <img src="images/calca2.jpg" alt="Calças">
+          <div class="category-info">
+            <h3>Calças & Botas</h3>
+            <span>4 produtos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PRODUCTS SECTION
+       ============================================================ -->
+  <section class="products" id="produtos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Catálogo</span>
+        <h2>Nossos Produtos</h2>
+        <p>Equipamentos selecionados com os melhores materiais e proteções do mercado.</p>
+      </div>
+
+      <!-- Filtros -->
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-filter="todos">Todos</button>
+        <button class="filter-tab" data-filter="jaquetas">Jaquetas</button>
+        <button class="filter-tab" data-filter="capacetes">Capacetes</button>
+        <button class="filter-tab" data-filter="luvas">Luvas</button>
+        <button class="filter-tab" data-filter="calcas">Calças</button>
+        <button class="filter-tab" data-filter="botas">Botas</button>
+      </div>
+
+      <!-- Grid de Produtos -->
+      <div class="products-grid" id="productsGrid">
+        <!-- Renderizado via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROMO BANNER / OFERTAS
+       ============================================================ -->
+  <section class="promo-banner" id="ofertas">
+    <div class="container">
+      <h2>🔥 Oferta Relâmpago</h2>
+      <p>Até 30% OFF em jaquetas e capacetes selecionados. Corra, é por tempo limitado!</p>
+      <div class="countdown">
+        <div class="countdown-item">
+          <span class="count-num" id="countHours">23</span>
+          <span class="count-label">Horas</span>
+        </div>
+        <div class="countdown-item">
+          <span class="count-num" id="countMins">59</span>
+          <span class="count-label">Minutos</span>
+        </div>
+        <div class="countdown-item">
+          <span class="count-num" id="countSecs">59</span>
+          <span class="count-label">Segundos</span>
+        </div>
+      </div>
+      <a href="#produtos" class="btn-white">Aproveitar Agora</a>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TESTIMONIALS
+       ============================================================ -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Depoimentos</span>
+        <h2>O que Dizem Nossos Clientes</h2>
+        <p>Mais de 5.000 motociclistas satisfeitos em todo o Brasil.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">
+            "A jaqueta Night Rider é incrível! Couro de altíssima qualidade, proteções CE e um acabamento impecável.
+            Já rodei mais de 10.000 km com ela e está como nova. Recomendo demais!"
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">R</div>
+            <div class="author-info">
+              <div class="name">Ricardo Mendes</div>
+              <div class="role">Motociclista há 15 anos — São Paulo, SP</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">
+            "Comprei o capacete Full Face Speed e fiquei impressionada com a qualidade. Entrega super rápida,
+            embalagem caprichada e o produto superou todas as expectativas. Já indiquei para várias amigas!"
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">A</div>
+            <div class="author-info">
+              <div class="name">Amanda Costa</div>
+              <div class="role">Motociclista — Belo Horizonte, MG</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">
+            "As luvas X11 Epic Pro são as melhores que já usei. Grip perfeito, proteção excelente e ainda
+            funcionam com touchscreen. Atendimento da loja foi nota 10, voltarei a comprar com certeza!"
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">F</div>
+            <div class="author-info">
+              <div class="name">Felipe Rodrigues</div>
+              <div class="role">Piloto amador — Curitiba, PR</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       NEWSLETTER
+       ============================================================ -->
+  <section class="newsletter" id="contato">
+    <div class="container">
+      <h2>Fique por Dentro das Novidades</h2>
+      <p>Cadastre-se e receba em primeira mão as promoções exclusivas, lançamentos e dicas para motociclistas.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="Seu melhor e-mail..." required>
+        <button type="submit">Quero Receber</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#inicio" class="logo">
+          <span class="logo-icon">🏍️</span>
+          <div class="logo-text">
+            <span class="brand">MotoGear</span>
+            <span class="tagline">Ride with Style</span>
+          </div>
+        </a>
+        <p>
+          Somos especialistas em equipamentos para motociclistas. Qualidade, segurança e estilo
+          para quem vive sobre duas rodas. Atendemos todo o Brasil desde 2015.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-link" title="Instagram">📸</a>
+          <a href="#" class="social-link" title="Facebook">👍</a>
+          <a href="#" class="social-link" title="YouTube">▶️</a>
+          <a href="#" class="social-link" title="WhatsApp">💬</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Categorias</h4>
+        <ul>
+          <li><a href="#produtos">Jaquetas</a></li>
+          <li><a href="#produtos">Capacetes</a></li>
+          <li><a href="#produtos">Luvas</a></li>
+          <li><a href="#produtos">Calças</a></li>
+          <li><a href="#produtos">Botas</a></li>
+          <li><a href="#produtos">Acessórios</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Informações</h4>
+        <ul>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">Política de Troca</a></li>
+          <li><a href="#">Política de Privacidade</a></li>
+          <li><a href="#">Termos de Uso</a></li>
+          <li><a href="#">Rastrear Pedido</a></li>
+          <li><a href="#">Blog Moto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Atendimento</h4>
+        <ul>
+          <li><a href="#">📞 (11) 9 9999-9999</a></li>
+          <li><a href="#">✉️ contato@motogear.com.br</a></li>
+          <li><a href="#">💬 Chat ao Vivo</a></li>
+          <li><a href="#">📍 São Paulo, SP</a></li>
+          <li><a href="#">⏰ Seg–Sex: 9h–18h</a></li>
+          <li><a href="#">⏰ Sáb: 9h–14h</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 MotoGear Store. Todos os direitos reservados. CNPJ: 00.000.000/0001-00</p>
+      <div class="payment-icons">
+        <span class="payment-icon">Visa</span>
+        <span class="payment-icon">Master</span>
+        <span class="payment-icon">Pix</span>
+        <span class="payment-icon">Boleto</span>
+        <span class="payment-icon">AmEx</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       CART SIDEBAR
+       ============================================================ -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>🛒 Meu Carrinho</h3>
+      <button class="cart-close" id="cartClose">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">
+        <span class="empty-icon">🛒</span>
+        <p>Seu carrinho está vazio.</p>
+        <button class="btn-primary" onclick="document.getElementById('cartSidebar').classList.remove('open');document.getElementById('cartOverlay').classList.remove('open');document.body.style.overflow=''">Ver Produtos</button>
+      </div>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span class="total-label">Total:</span>
+        <span class="total-value" id="cartTotal">R$ 0,00</span>
+      </div>
+      <button class="checkout-btn" id="checkoutBtn">Finalizar Compra</button>
+      <button class="continue-btn" onclick="document.getElementById('cartSidebar').classList.remove('open');document.getElementById('cartOverlay').classList.remove('open');document.body.style.overflow=''">
+        ← Continuar Comprando
+      </button>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       MODAL PRODUTO
+       ============================================================ -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <div class="modal-image">
+        <img src="" alt="" id="modalImage">
+      </div>
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose">✕</button>
+        <div class="modal-category" id="modalCategory"></div>
+        <h2 class="modal-name" id="modalName"></h2>
+        <div class="modal-stars" id="modalStars"></div>
+        <div class="modal-price">
+          <span class="current" id="modalCurrentPrice"></span>
+          <span class="old" id="modalOldPrice"></span>
+        </div>
+        <p class="modal-description" id="modalDescription"></p>
+        <div class="size-selector">
+          <label>Selecione o Tamanho:</label>
+          <div class="sizes" id="modalSizes"></div>
+        </div>
+        <button class="modal-add-btn" id="modalAddBtn">🛒 Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       TOAST NOTIFICATION
+       ============================================================ -->
+  <div class="toast" id="toast"></div>
+
+  <!-- ============================================================
+       BACK TO TOP
+       ============================================================ -->
+  <button class="back-to-top" id="backToTop" title="Voltar ao topo">↑</button>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
